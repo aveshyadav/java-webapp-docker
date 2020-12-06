@@ -26,4 +26,5 @@ jobs:
         port: ${{ secrets.PORT }} 
         script: |
           whoami
+          cd /mit-api
           ls -al      
