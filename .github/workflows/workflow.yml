@@ -27,4 +27,5 @@ jobs:
         script: |
           whoami
           cd /mit-api
-          ls -al      
+          ls -al
+          ls      
