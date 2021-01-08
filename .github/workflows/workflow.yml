@@ -25,7 +25,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }} 
         script: |
-          whoami
-          cd /mit-api
-          ls -al
-          ls      
+          ls
+          cd /var/sentora/hostdata/imgglobal/public_html/Olympiad/test/Q-Login-Service/target
+          ps -ef | grep 'Q-Login-Service-0.0.1-SNAPSHOT.jar' | grep -v 'grep' | awk '{ printf $2 }'
+                          
